@@ -3,9 +3,11 @@ Elemental Demo for KVM
 
 HowTo
 
-1. Generate image with the template elemental-image.template
+Note: please check the shell script and modify with your values
+
+1. Generate image with the template registration-endpoint.template
 2. Download the image and copy to the kvm host
-3. Boot the image with the script create-elemental-node.sh(usage: create-elemental-node.sh <machine-name> <image-name>)
+3. Boot the image with the script create-elemental-node.sh(usage: create-elemental-node.sh <vm-name> <image-name>)
 
 ToDo
 
