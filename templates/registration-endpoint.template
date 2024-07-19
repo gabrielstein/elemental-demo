@@ -1,0 +1,19 @@
+config:
+  cloud-config:
+    users:
+      - name: root
+        passwd: root
+  elemental:
+    install:
+      device: /dev/vda
+      poweroff: true
+      snapshotter:
+        type: loopdevice
+    registration:
+      auth: tpm
+      emulate-tpm: true
+      emulated-tpm-seed: -1
+    reset:
+      reboot: true
+      reset-oem: true
+      reset-persistent: true
